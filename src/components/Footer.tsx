@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h2 className="text-2xl font-bold mb-4">
-              <span className="text-hive-amber">Hive</span> Analytics
+              <span className="text-hive-amber">Hive</span> Business Analytics
             </h2>
             <p className="text-white/70 mb-6">
               Transforming business data into actionable insights for growth and innovation.

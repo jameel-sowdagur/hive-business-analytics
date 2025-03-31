@@ -1,7 +1,6 @@
 
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { ChevronRight, BarChart2, TrendingUp, PieChart } from "lucide-react";
+import { BarChart2, TrendingUp, PieChart } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -17,15 +16,7 @@ const Hero = () => {
               Hive Business Analytics helps organizations unlock the power of their data,
               delivering actionable insights that drive growth and innovation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-hive-amber hover:bg-hive-gold text-white px-6 py-6 text-lg">
-                Get Started
-                <ChevronRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" className="border-hive-blue text-hive-blue hover:bg-hive-blue/10 px-6 py-6 text-lg">
-                Book a Demo
-              </Button>
-            </div>
+            
             <div className="flex items-center space-x-6 pt-4">
               <div className="flex items-center">
                 <div className="h-2 w-2 rounded-full bg-green-500 mr-2"></div>

@@ -1,6 +1,8 @@
-
 import React from "react";
-import { Facebook, Twitter, Instagram, Linkedin, ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Facebook, Twitter, Instagram, Linkedin, SendHorizontal } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -117,7 +119,7 @@ const Footer = () => {
                 type="submit"
                 className="bg-hive-amber hover:bg-hive-gold px-4 py-2 rounded-r-md transition-colors"
               >
-                <Send className="h-5 w-5" />
+                <SendHorizontal className="h-5 w-5" />
               </button>
             </form>
           </div>

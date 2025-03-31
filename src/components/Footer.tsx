@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Facebook, Twitter, Instagram, Linkedin, SendHorizontal } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, SendHorizontal, ChevronRight } from "lucide-react";
 
 const Footer = () => {
   return (

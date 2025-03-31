@@ -57,9 +57,6 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <Button className="bg-hive-amber hover:bg-hive-gold text-white">
-            Get Started
-          </Button>
         </div>
 
         {/* Mobile Navigation Button */}
@@ -85,9 +82,6 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button className="bg-hive-amber hover:bg-hive-gold text-white w-full">
-              Get Started
-            </Button>
           </div>
         </div>
       )}

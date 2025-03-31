@@ -1,4 +1,3 @@
-
 import React from "react";
 import { BarChart2, TrendingUp, PieChart } from "lucide-react";
 
@@ -17,16 +16,7 @@ const Hero = () => {
               delivering actionable insights that drive growth and innovation.
             </p>
             
-            <div className="flex items-center space-x-6 pt-4">
-              <div className="flex items-center">
-                <div className="h-2 w-2 rounded-full bg-green-500 mr-2"></div>
-                <span className="text-sm text-hive-gray">600+ Projects</span>
-              </div>
-              <div className="flex items-center">
-                <div className="h-2 w-2 rounded-full bg-blue-500 mr-2"></div>
-                <span className="text-sm text-hive-gray">98% Client Satisfaction</span>
-              </div>
-            </div>
+            
           </div>
 
           <div className="relative hidden lg:block">

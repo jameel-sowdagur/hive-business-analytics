@@ -43,7 +43,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 bg-hive-lightgray">
+    <section id="services" className="py-8 bg-hive-lightgray">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-hive-gray mb-8">
           Our Services

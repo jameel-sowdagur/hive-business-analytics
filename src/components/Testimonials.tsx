@@ -60,21 +60,6 @@ const Testimonials = () => {
             </Card>
           ))}
         </div>
-
-        <div className="mt-16 bg-white/10 backdrop-blur-sm rounded-xl p-8 max-w-3xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Ready to transform your business with data?</h3>
-              <p className="text-white/80">Join hundreds of satisfied clients and start your journey today.</p>
-            </div>
-            <a 
-              href="#contact" 
-              className="bg-hive-amber hover:bg-hive-gold text-white font-medium py-3 px-6 rounded-md transition-colors duration-200 whitespace-nowrap"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );

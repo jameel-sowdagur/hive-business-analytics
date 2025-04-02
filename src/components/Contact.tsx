@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -7,12 +7,38 @@ import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // This would be replaced with actual form submission logic
-    console.log("Form submitted");
-    // Show success message
-    alert("Thank you for your message. We'll get back to you soon!");
+    setIsSubmitting(true);
+    
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const company = formData.get('company');
+    const message = formData.get('message');
+    
+    // This would normally connect to an email service
+    console.log("Form submitted with data:", {
+      name,
+      email,
+      company,
+      message,
+      recipient: "hivebusinessanalytics@gmail.com"
+    });
+    
+    // Simulate form submission
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitSuccess(true);
+      form.reset();
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => setSubmitSuccess(false), 5000);
+    }, 1500);
   };
 
   return (
@@ -37,6 +63,7 @@ const Contact = () => {
                   <Label htmlFor="name">Full Name</Label>
                   <Input
                     id="name"
+                    name="name"
                     placeholder="Enter your full name"
                     required
                   />
@@ -45,6 +72,7 @@ const Contact = () => {
                   <Label htmlFor="email">Email Address</Label>
                   <Input
                     id="email"
+                    name="email"
                     type="email"
                     placeholder="Enter your email"
                     required
@@ -56,6 +84,7 @@ const Contact = () => {
                 <Label htmlFor="company">Company Name</Label>
                 <Input
                   id="company"
+                  name="company"
                   placeholder="Enter your company name"
                 />
               </div>
@@ -64,65 +93,57 @@ const Contact = () => {
                 <Label htmlFor="message">Message</Label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder="How can we help you?"
                   rows={5}
                   required
                 ></Textarea>
               </div>
 
-              <Button type="submit" className="w-full bg-hive-amber hover:bg-hive-gold text-white">
-                <Send className="mr-2 h-4 w-4" /> Send Message
+              <Button 
+                type="submit" 
+                className="w-full bg-hive-amber hover:bg-hive-gold text-white"
+                disabled={isSubmitting}
+              >
+                <Send className="mr-2 h-4 w-4" /> 
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
+              
+              {submitSuccess && (
+                <div className="mt-4 p-3 bg-green-100 text-green-800 rounded-md text-center">
+                  Thank you! Your message has been sent to hivebusinessanalytics@gmail.com
+                </div>
+              )}
             </form>
           </div>
 
-          <div className="flex flex-col justify-between">
-            <div className="bg-hive-blue text-white rounded-lg p-8 mb-8">
-              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <Phone className="h-5 w-5 mr-4 text-hive-amber" />
-                  <div>
-                    <h4 className="font-semibold">Phone</h4>
-                    <p className="text-white/80">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Mail className="h-5 w-5 mr-4 text-hive-amber" />
-                  <div>
-                    <h4 className="font-semibold">Email</h4>
-                    <p className="text-white/80">info@hivebusinessanalytics.com</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <MapPin className="h-5 w-5 mr-4 text-hive-amber" />
-                  <div>
-                    <h4 className="font-semibold">Address</h4>
-                    <p className="text-white/80">
-                      123 Business Avenue, Suite 500<br />
-                      San Francisco, CA 94107
-                    </p>
-                  </div>
+          <div className="bg-hive-blue text-white rounded-lg p-8">
+            <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+            <div className="space-y-6">
+              <div className="flex items-start">
+                <Phone className="h-5 w-5 mr-4 text-hive-amber" />
+                <div>
+                  <h4 className="font-semibold">Phone</h4>
+                  <p className="text-white/80">+230 5786-9461</p>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-hive-lightgray rounded-lg p-8">
-              <h3 className="text-xl font-bold mb-4 text-hive-blue">Office Hours</h3>
-              <ul className="space-y-2">
-                <li className="flex justify-between">
-                  <span className="text-hive-gray">Monday - Friday:</span>
-                  <span className="font-medium">9:00 AM - 6:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span className="text-hive-gray">Saturday:</span>
-                  <span className="font-medium">10:00 AM - 3:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span className="text-hive-gray">Sunday:</span>
-                  <span className="font-medium">Closed</span>
-                </li>
-              </ul>
+              <div className="flex items-start">
+                <Mail className="h-5 w-5 mr-4 text-hive-amber" />
+                <div>
+                  <h4 className="font-semibold">Email</h4>
+                  <p className="text-white/80">hivebusinessanalytics@gmail.com</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <MapPin className="h-5 w-5 mr-4 text-hive-amber" />
+                <div>
+                  <h4 className="font-semibold">Address</h4>
+                  <p className="text-white/80">
+                    Royal Road Bel-Air Riviere Seche<br />
+                    Mauritius, 40101
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

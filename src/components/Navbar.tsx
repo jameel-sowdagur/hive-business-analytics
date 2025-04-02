@@ -42,7 +42,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#home" className="flex items-center">
-          <svg width="200" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             {/* Hexagons forming honeycomb pattern */}
             <g transform="translate(10, 10) scale(0.8)">
               <polygon points="15,0 30,8.66 30,26 15,34.66 0,26 0,8.66" fill="#f2c94c" stroke="#e6b32e" strokeWidth="1"/>
@@ -71,7 +71,7 @@ const Navbar = () => {
             {/* Text */}
             <g transform="translate(65, 25)">
               <text fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="16" fill="#4d3e5a">HIVE</text>
-              <text transform="translate(50, 0)" fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="16" fill="#4d3e5a">BUSINESS</text>
+              <text transform="translate(45, 0)" fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="16" fill="#f2c94c">BUSINESS</text>
             </g>
             <text x="65" y="40" fontFamily="Arial, sans-serif" fontSize="10" fill="#4d3e5a">ANALYTICS</text>
           </svg>

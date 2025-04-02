@@ -22,16 +22,31 @@ const About = () => {
             </h2>
             
             <p className="text-hive-gray mb-6">
-              Founded by industry experts with over 20 years of combined experience, 
-              Hive Business Analytics is dedicated to helping businesses leverage their 
-              data to achieve exceptional results.
+              Founded by industry experts with over 20 years of combined experience, Hive Business Analytics specializes 
+              in leveraging Artificial Intelligence (AI) and Machine Learning (ML) to transform raw data into actionable insights.
+            </p>
+            
+            <p className="text-hive-gray mb-6">
+              We are a team of experienced data scientists, statisticians, and software developers dedicated to empowering 
+              businesses with advanced analytics solutions. Our expertise spans across AI-driven data modeling, predictive 
+              analytics, and intelligent automation, enabling organizations to make data-backed decisions with confidence.
+            </p>
+            
+            <p className="text-hive-gray mb-6">
+              With extensive experience in surveys and data collection, we offer end-to-end data collection through both 
+              Computer-Assisted Personal Interviewing (CAPI) and Paper-and-Pencil Interviewing (PAPI) methodologies. 
+              Our highly trained pool of interviewers is ready to conduct data collection efficiently and accurately, 
+              ensuring the highest data quality for your business needs.
+            </p>
+            
+            <p className="text-hive-gray mb-6">
+              At Hive Business Analytics, we believe that every organization, regardless of its size, should have access to 
+              cutting-edge analytics tools and insights. Our team works collaboratively to deliver innovative solutions that 
+              drive measurable business impact.
             </p>
             
             <p className="text-hive-gray mb-10">
-              We believe that every organization, regardless of size, should have access 
-              to powerful analytics tools and insights. Our team of data scientists, 
-              analysts, and business consultants work collaboratively to deliver solutions 
-              that create real business impact.
+              Let us help you harness the power of data to fuel your success.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -49,34 +64,22 @@ const About = () => {
             <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-hive-blue/10 rounded-full"></div>
             
             <div className="relative bg-white shadow-xl rounded-lg p-8 z-10">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-6">
-                  <h3 className="text-5xl font-bold text-hive-amber mb-2">20+</h3>
-                  <p className="text-hive-gray">Data Experts</p>
-                </div>
-                <div className="text-center p-6">
-                  <h3 className="text-5xl font-bold text-hive-amber mb-2">600+</h3>
-                  <p className="text-hive-gray">Projects Completed</p>
-                </div>
-                <div className="text-center p-6">
-                  <h3 className="text-5xl font-bold text-hive-amber mb-2">98%</h3>
-                  <p className="text-hive-gray">Client Satisfaction</p>
-                </div>
-                <div className="text-center p-6">
-                  <h3 className="text-5xl font-bold text-hive-amber mb-2">12+</h3>
-                  <p className="text-hive-gray">Years Experience</p>
-                </div>
-              </div>
-              
-              <div className="mt-6 pt-6 border-t border-gray-100">
-                <h4 className="font-semibold mb-2 text-hive-blue">Our Approach</h4>
-                <p className="text-sm text-hive-gray">
-                  We combine industry expertise with advanced analytics methodologies 
-                  to deliver insights that matter to your business. Our collaborative 
-                  approach ensures that solutions are not only technically sound but 
-                  also practically applicable.
-                </p>
-              </div>
+              <h4 className="font-bold text-xl mb-4 text-hive-blue">Our Approach</h4>
+              <p className="text-hive-gray mb-4">
+                We combine cutting-edge AI technology with deep industry expertise to deliver insights 
+                that drive meaningful business outcomes. Our data-driven approach ensures that every 
+                solution is tailored to your specific business challenges and opportunities.
+              </p>
+              <p className="text-hive-gray mb-4">
+                By integrating advanced machine learning algorithms with robust statistical methods, 
+                we can identify patterns, predict trends, and uncover insights that might otherwise 
+                remain hidden in your data.
+              </p>
+              <p className="text-hive-gray">
+                Our collaborative process involves working closely with your team to understand your 
+                business goals, designing custom analytics solutions, and implementing them in a way 
+                that delivers maximum value and ROI.
+              </p>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send, Smartphone } from "lucide-react";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -120,10 +120,17 @@ const Contact = () => {
           <div className="bg-hive-blue text-white rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
             <div className="space-y-6">
+              <div className="mb-6">
+                <h4 className="font-semibold text-hive-amber">Contact Person:</h4>
+                <p className="text-white/80">Tawheeda Rozbully (Mrs)</p>
+              </div>
               <div className="flex items-start">
-                <Phone className="h-5 w-5 mr-4 text-hive-amber" />
+                <div className="flex items-center mr-4">
+                  <Phone className="h-5 w-5 mr-2 text-hive-amber" />
+                  <Smartphone className="h-5 w-5 text-hive-amber" />
+                </div>
                 <div>
-                  <h4 className="font-semibold">Phone</h4>
+                  <h4 className="font-semibold">Phone / WhatsApp</h4>
                   <p className="text-white/80">+230 5786-9461</p>
                 </div>
               </div>

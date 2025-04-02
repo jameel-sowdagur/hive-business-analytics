@@ -1,29 +1,9 @@
 
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Presentation, BarChart3, Database, TrendingUp, FileSpreadsheet, Smartphone, GraduationCap } from "lucide-react";
+import { FileSpreadsheet, Smartphone, GraduationCap, BarChart3, Database, Presentation, TrendingUp } from "lucide-react";
 
 const servicesData = [
-  {
-    title: "Data Visualization",
-    description: "Transform raw data into compelling visuals for better insights.",
-    icon: Presentation,
-  },
-  {
-    title: "Business Intelligence",
-    description: "Gain a competitive edge with data-driven strategic decisions.",
-    icon: BarChart3,
-  },
-  {
-    title: "Data Warehousing",
-    description: "Centralize your data for comprehensive analysis and reporting.",
-    icon: Database,
-  },
-  {
-    title: "Predictive Analytics",
-    description: "Forecast future trends using machine learning and make proactive adjustments.",
-    icon: TrendingUp,
-  },
   {
     title: "Survey Research and Analysis",
     description: "Collect and analyze data through structured surveys to uncover valuable insights.",
@@ -38,6 +18,26 @@ const servicesData = [
     title: "Technical Training and Upskills",
     description: "Enhance your team's capabilities with specialized training in AI, machine learning, and data science technologies.",
     icon: GraduationCap,
+  },
+  {
+    title: "Business Intelligence",
+    description: "Gain a competitive edge with data-driven strategic decisions.",
+    icon: BarChart3,
+  },
+  {
+    title: "Data Warehousing",
+    description: "Centralize your data for comprehensive analysis and reporting.",
+    icon: Database,
+  },
+  {
+    title: "Data Visualization",
+    description: "Transform raw data into compelling visuals for better insights.",
+    icon: Presentation,
+  },
+  {
+    title: "Predictive Analytics",
+    description: "Forecast future trends using machine learning and make proactive adjustments.",
+    icon: TrendingUp,
   },
 ];
 

@@ -1,6 +1,7 @@
+
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Presentation, BarChart3, Database, TrendingUp } from "lucide-react";
+import { Presentation, BarChart3, Database, TrendingUp, FileSpreadsheet, Smartphone, GraduationCap } from "lucide-react";
 
 const servicesData = [
   {
@@ -20,8 +21,23 @@ const servicesData = [
   },
   {
     title: "Predictive Analytics",
-    description: "Forecast future trends and make proactive adjustments.",
+    description: "Forecast future trends using machine learning and make proactive adjustments.",
     icon: TrendingUp,
+  },
+  {
+    title: "Survey Research and Analysis",
+    description: "Collect and analyze data through structured surveys to uncover valuable insights.",
+    icon: FileSpreadsheet,
+  },
+  {
+    title: "Mobile App Development",
+    description: "Create custom mobile solutions that align with your business goals and user needs.",
+    icon: Smartphone,
+  },
+  {
+    title: "Technical Training and Upskills",
+    description: "Enhance your team's capabilities with specialized training in AI, machine learning, and data science technologies.",
+    icon: GraduationCap,
   },
 ];
 

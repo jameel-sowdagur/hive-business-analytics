@@ -41,9 +41,40 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#home" className="flex items-center font-bold text-2xl">
-          <span className="text-hive-amber">Hive</span>
-          <span className="text-hive-blue">Business Analytics</span>
+        <a href="#home" className="flex items-center">
+          <svg width="220" height="60" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform scale-110">
+            {/* Hexagons forming honeycomb pattern */}
+            <g transform="translate(10, 10) scale(0.8)">
+              <polygon points="15,0 30,8.66 30,26 15,34.66 0,26 0,8.66" fill="#f2c94c" stroke="#e6b32e" strokeWidth="1"/>
+              <polygon points="35,0 50,8.66 50,26 35,34.66 20,26 20,8.66" fill="#f2c94c" stroke="#e6b32e" strokeWidth="1"/>
+              <polygon points="25,17.32 40,25.98 40,43.32 25,52 10,43.32 10,25.98" fill="#f2c94c" stroke="#e6b32e" strokeWidth="1"/>
+             
+              {/* Charts/graphs inside hexagons */}
+              <g transform="translate(7, 13) scale(0.5)">
+                <rect x="0" y="0" width="3" height="15" fill="#4d3e5a"/>
+                <rect x="5" y="4" width="3" height="11" fill="#4d3e5a"/>
+                <rect x="10" y="2" width="3" height="13" fill="#4d3e5a"/>
+                <rect x="15" y="7" width="3" height="8" fill="#4d3e5a"/>
+              </g>
+             
+              <g transform="translate(27, 13) scale(0.5)">
+                <path d="M0,15 L5,10 L10,12 L15,5 L20,8" stroke="#4d3e5a" strokeWidth="2" fill="none"/>
+              </g>
+             
+              <g transform="translate(17, 30) scale(0.5)">
+                <circle cx="10" cy="10" r="10" fill="#4d3e5a"/>
+                <path d="M10,10 L10,0" stroke="#f2c94c" strokeWidth="2"/>
+                <path d="M10,10 L17,13" stroke="#f2c94c" strokeWidth="2"/>
+              </g>
+            </g>
+           
+            {/* Text */}
+            <g transform="translate(65, 25)">
+              <text fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="16" fill="#4d3e5a">HIVE</text>
+              <text transform="translate(50, 0)" fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="16" fill="#f2c94c">DATA</text>
+            </g>
+            <text x="65" y="40" fontFamily="Arial, sans-serif" fontSize="10" fill="#4d3e5a">ANALYTICS</text>
+          </svg>
         </a>
 
         {/* Desktop Navigation */}

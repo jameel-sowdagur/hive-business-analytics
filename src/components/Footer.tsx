@@ -51,19 +51,19 @@ const Footer = () => {
               <li>
                 <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
                   <ChevronRight className="h-4 w-4 mr-1" />
-                  Technical Training and Upskills
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
                   Business Intelligence
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
                   <ChevronRight className="h-4 w-4 mr-1" />
-                  Data Warehousing
+                  Data Visualization
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-1" />
+                  Predictive Analytics
                 </a>
               </li>
             </ul>

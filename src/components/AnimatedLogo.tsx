@@ -7,7 +7,7 @@ const AnimatedLogo = () => {
       <div className="relative w-64 h-64 flex justify-center items-center">
         {/* Main logo with glowing effect */}
         <img 
-          src="/lovable-uploads/e289ba76-b781-429e-8ca2-484bc2057390.png" 
+          src="/lovable-uploads/eaaf9e19-d75f-463b-a023-12cb90e1d77c.png" 
           alt="Hive Business Analytics Logo" 
           className="z-10 w-full h-full object-contain drop-shadow-lg"
         />

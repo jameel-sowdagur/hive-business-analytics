@@ -13,7 +13,12 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <AnimatedLogo />
+      
+      {/* Logo section with full-width background strip */}
+      <div className="w-full bg-hive-lightgray pt-24 pb-8">
+        <AnimatedLogo />
+      </div>
+      
       <main>
         <Hero />
         <Services />

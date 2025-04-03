@@ -4,7 +4,7 @@ import React from "react";
 const AnimatedLogo = () => {
   return (
     <div className="flex justify-center items-center py-8">
-      <div className="relative w-64 h-64 flex justify-center items-center">
+      <div className="relative w-48 h-48 flex justify-center items-center">
         {/* Main logo with glowing effect */}
         <img 
           src="/lovable-uploads/eaaf9e19-d75f-463b-a023-12cb90e1d77c.png" 

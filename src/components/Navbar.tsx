@@ -87,6 +87,12 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
+          <a 
+            href="#upcoming-event" 
+            className="bg-hive-amber hover:bg-hive-gold text-white px-4 py-2 rounded-md transition-colors"
+          >
+            Upcoming Event
+          </a>
         </div>
 
         {/* Mobile Navigation Button */}
@@ -112,6 +118,13 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <a
+              href="#upcoming-event"
+              className="bg-hive-amber hover:bg-hive-gold text-white px-4 py-2 rounded-md transition-colors text-center"
+              onClick={() => setIsOpen(false)}
+            >
+              Upcoming Event
+            </a>
           </div>
         </div>
       )}

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -36,33 +37,33 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-1" />
+                  Survey Research and Analysis
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-1" />
+                  Mobile App Development
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-1" />
+                  Technical Training and Upskills
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
                   <ChevronRight className="h-4 w-4 mr-1" />
                   Business Intelligence
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
                   <ChevronRight className="h-4 w-4 mr-1" />
-                  Data Integration
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Predictive Analytics
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Customer Analytics
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Performance Optimization
+                  Data Warehousing
                 </a>
               </li>
             </ul>
@@ -78,21 +79,21 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  About Us
-                </a>
-              </li>
-              <li>
                 <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
                   <ChevronRight className="h-4 w-4 mr-1" />
                   Services
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                <a href="#about" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
                   <ChevronRight className="h-4 w-4 mr-1" />
-                  Testimonials
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#upcoming-event" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-1" />
+                  Upcoming Event
                 </a>
               </li>
               <li>

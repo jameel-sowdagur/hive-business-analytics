@@ -19,6 +19,69 @@
     
     <!-- Add direct CSS link -->
     <link rel="stylesheet" href="./src/index.css">
+    
+    <!-- Add Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configure Tailwind with our custom colors -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'hive-blue': '#4d3e5a',
+              'hive-amber': '#f6a700',
+              'hive-gold': '#e6b32e',
+              'hive-gray': '#4d4d4d',
+              'hive-lightgray': '#f9f9f9'
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Add custom styles -->
+    <style>
+      .honeycomb-bg {
+        background-color: #f9f9f9;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657l1.415 1.414L13.858 0H11.03zm32.284 0L39.9 3.414 42.327 0h-9.9L29.9 2.828 27.472 0h-9.9l2.43 3.414L16.686 0H13.87l3.657 3.657-1.414 1.414L11.03 0h2.83L7.372 3.657l1.415 1.414L11.03 0h2.83L7.372 3.657l1.414 1.415L11.03 0h2.827L7.372 3.657l1.414 1.414L11.03 0h2.827L7.373 3.657l1.415 1.414L11.03 0h2.827L7.373 3.657l1.414 1.414L11.03 0h2.828L7.373 3.657l1.414 1.414L11.03 0h2.828L7.373 3.657l1.414 1.414L11.03 0h2.83zm1.414 0l2.43 3.414L50.114 0h-2.83zM39.9 0L42.33 3.414 44.757 0h-2.83L39.9 3.414 42.328 0h-2.83L35.9 6.343 33.471 3.657 30.627 0h-2.83l2.83 2.828L27.472 0h-2.83l2.83 2.828L24.343 0h-2.83l2.83 2.828L21.172 0h-2.83l2.83 2.828 2.83 2.83.56-.557L21.173 0h2.83l2.83 2.828L29.9 0h2.828l1.414 1.414L33.13 0h2.83l-1.985 1.985L33.13 0h2.83l1.414 1.414-2.83 2.83L31.37 7.07l-2.83-2.83-2.83-2.83L27.473 0h2.83l-1.985 1.985 2.83 2.828 2.83 2.83 2.828-2.83 2.83-2.83-.56-.56L35.9 0h2.83l1.413 1.414-2.83 2.83-1.414 1.413-2.83-2.83-1.413-1.413L29.9 0h2.828l-2.83 2.828 2.83 2.83 1.414-1.414 2.83-2.83L35.9 0h2.83l1.414 1.414-2.83 2.83-1.414 1.414-2.83-2.83L30.627 0h2.83l2.83 2.828-2.83 2.83-2.83-2.83L27.472 0h2.83l-1.986 1.985 2.83 2.83 2.83-2.83L35.9 0h2.83L31.37 7.07l-2.83-2.83-2.83-2.83L24.34 0h2.83l2.83 2.828-2.83 2.83-2.83-2.83L21.173 0h2.83l2.83 2.828 2.83 2.83 2.827-2.83 2.83-2.83.56.56L36.316 0h-2.83l-1.413 1.414 2.83 2.83 2.83-2.83L39.9 0h2.828l1.413 1.414-2.83 2.83-1.414 1.413-2.83-2.83L35.9 0h2.83l1.414 1.414-2.83 2.83-1.414 1.414-2.83-2.83-1.413-1.414L29.9 0h2.83l-2.83 2.828 2.83 2.83 1.414-1.414 2.83-2.83L35.9 0h2.83l-2.83 2.828 2.83 2.83 1.414-1.414 2.83-2.83L41.313 0h2.83l-2.83 2.828 2.83 2.83 1.414-1.414 2.83-2.83L46.657 0h2.83L46.9 2.828 50.142 0h-2.83l-.56.557L51.8 0h-2.83L46.9 2.828l2.83 2.83.56-.557L54.628 0h-2.83z' fill='%23f6a700' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+      }
+      
+      .hexagon {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      }
+      
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+      }
+      
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      .delay-100 {
+        animation-delay: 0.1s;
+      }
+      
+      .delay-300 {
+        animation-delay: 0.3s;
+      }
+      
+      .delay-500 {
+        animation-delay: 0.5s;
+      }
+      
+      .animate-fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+      
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    </style>
   </head>
 
   <body>
@@ -26,27 +89,255 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     
-    <!-- For direct file opening, provide a fallback message -->
-    <script>
-      // Check if the page is being opened directly
-      if (window.location.protocol === 'file:') {
-        document.getElementById('root').innerHTML = `
-          <div style="max-width: 600px; margin: 100px auto; text-align: center; font-family: Arial, sans-serif;">
-            <h1 style="color: #f6a700;">Hive Business Analytics</h1>
-            <p style="font-size: 18px; line-height: 1.6;">
-              This React application needs to be run through a development server to work properly.
-            </p>
-            <div style="margin: 30px 0; padding: 20px; background: #f5f5f5; border-radius: 8px; text-align: left;">
-              <h3>To run this application:</h3>
-              <ol style="line-height: 1.8;">
-                <li>Open a terminal in the project directory</li>
-                <li>Run <code style="background: #eee; padding: 3px 6px; border-radius: 4px;">npm install</code> (if you haven't already)</li>
-                <li>Run <code style="background: #eee; padding: 3px 6px; border-radius: 4px;">npm run dev</code> to start the development server</li>
-                <li>Open the URL provided in the terminal (typically http://localhost:8080)</li>
-              </ol>
+    <!-- Add React and other dependencies from CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- HTML fallback for direct file opening -->
+    <div id="static-content">
+      <!-- Navbar -->
+      <nav class="fixed w-full z-50 bg-white shadow-md py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <a href="#home" class="flex items-center">
+            <div style="width: 200px;">
+              <svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(10, 10) scale(0.8)">
+                  <polygon points="15,0 30,8.66 30,26 15,34.66 0,26 0,8.66" fill="#f2c94c" stroke="#e6b32e" strokeWidth="1"/>
+                  <polygon points="35,0 50,8.66 50,26 35,34.66 20,26 20,8.66" fill="#f2c94c" stroke="#e6b32e" strokeWidth="1"/>
+                  <polygon points="25,17.32 40,25.98 40,43.32 25,52 10,43.32 10,25.98" fill="#f2c94c" stroke="#e6b32e" strokeWidth="1"/>
+                  <g transform="translate(7, 13) scale(0.5)">
+                    <rect x="0" y="0" width="3" height="15" fill="#4d3e5a"/>
+                    <rect x="5" y="4" width="3" height="11" fill="#4d3e5a"/>
+                    <rect x="10" y="2" width="3" height="13" fill="#4d3e5a"/>
+                    <rect x="15" y="7" width="3" height="8" fill="#4d3e5a"/>
+                  </g>
+                  <g transform="translate(27, 13) scale(0.5)">
+                    <path d="M0,15 L5,10 L10,12 L15,5 L20,8" stroke="#4d3e5a" strokeWidth="2" fill="none"/>
+                  </g>
+                  <g transform="translate(17, 30) scale(0.5)">
+                    <circle cx="10" cy="10" r="10" fill="#4d3e5a"/>
+                    <path d="M10,10 L10,0" stroke="#f2c94c" strokeWidth="2"/>
+                    <path d="M10,10 L17,13" stroke="#f2c94c" strokeWidth="2"/>
+                  </g>
+                </g>
+                <g transform="translate(65, 25)">
+                  <text fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="16" fill="#4d3e5a">HIVE</text>
+                  <text transform="translate(45, 0)" fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="16" fill="#f2c94c">BUSINESS</text>
+                </g>
+                <text x="65" y="40" fontFamily="Arial, sans-serif" fontSize="10" fill="#4d3e5a">ANALYTICS</text>
+              </svg>
+            </div>
+          </a>
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="#home" class="text-hive-gray hover:text-hive-amber transition-colors duration-200">Home</a>
+            <a href="#services" class="text-hive-gray hover:text-hive-amber transition-colors duration-200">Services</a>
+            <a href="#about" class="text-hive-gray hover:text-hive-amber transition-colors duration-200">About</a>
+            <a href="#contact" class="text-hive-gray hover:text-hive-amber transition-colors duration-200">Contact</a>
+            <a href="#upcoming-event" class="bg-hive-amber hover:bg-hive-gold text-white px-4 py-2 rounded-md transition-colors">Upcoming Event</a>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Hero Section -->
+      <section id="home" class="relative pt-24 pb-16 md:py-32 lg:py-48 overflow-hidden honeycomb-bg">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 animate-fade-in">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-hive-blue">
+                Revolutionize Your Business with <span class="text-hive-amber">AI-Powered</span> Data Insights
+              </h1>
+              <p class="text-lg md:text-xl text-hive-gray max-w-lg">
+                Hive Business Analytics helps organizations unlock the power of their data,
+                delivering actionable insights that drive growth and innovation.
+              </p>
             </div>
           </div>
-        `;
+        </div>
+      </section>
+      
+      <!-- Services Section -->
+      <section id="services" class="py-12 bg-hive-lightgray">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-hive-gray mb-8">Our Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+              <div class="flex items-center mb-4">
+                <h3 class="text-xl font-semibold text-hive-gray">Survey Research and Analysis</h3>
+              </div>
+              <p class="text-hive-gray">Collect and analyze data through structured surveys to uncover valuable insights.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+              <div class="flex items-center mb-4">
+                <h3 class="text-xl font-semibold text-hive-gray">Mobile App Development</h3>
+              </div>
+              <p class="text-hive-gray">Create custom mobile solutions that align with your business goals and user needs.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+              <div class="flex items-center mb-4">
+                <h3 class="text-xl font-semibold text-hive-gray">Technical Training</h3>
+              </div>
+              <p class="text-hive-gray">Enhance your team's capabilities with specialized training in AI, machine learning, and data science technologies.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- About Section -->
+      <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">About <span class="text-hive-amber">Hive</span> Business Analytics</h2>
+          <p class="text-hive-gray">
+            Founded by industry experts with over 20 years of combined experience, Hive Business Analytics specializes 
+            in leveraging Artificial Intelligence (AI) and Machine Learning (ML) to transform raw data into actionable insights.
+          </p>
+        </div>
+      </section>
+      
+      <!-- Testimonials -->
+      <section id="testimonials" class="py-20 bg-hive-blue text-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Client <span class="text-hive-amber">Testimonials</span></h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            <div class="bg-white/10 backdrop-blur-sm border-none p-6 rounded-lg">
+              <p class="mb-6 text-white/90">"Hive Business Analytics transformed our approach to data. Their insights helped us increase revenue by 30% in just six months."</p>
+              <div>
+                <h4 class="font-semibold">Sarah Johnson</h4>
+                <p class="text-sm text-white/70">CEO, TechInnovate</p>
+              </div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm border-none p-6 rounded-lg">
+              <p class="mb-6 text-white/90">"The team at Hive provided clear, actionable insights that helped us streamline operations and better understand our customers."</p>
+              <div>
+                <h4 class="font-semibold">Michael Chen</h4>
+                <p class="text-sm text-white/70">COO, RetailGrowth Inc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Upcoming Event -->
+      <section id="upcoming-event" class="py-16 bg-hive-lightgray">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-hive-gray mb-8">Upcoming Event</h2>
+          <div class="flex flex-col items-center gap-8">
+            <div class="w-full max-w-3xl rounded-lg overflow-hidden shadow-lg">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" alt="Event Poster" class="w-full h-auto object-cover">
+            </div>
+            <a href="https://forms.google.com" target="_blank" class="bg-hive-amber hover:bg-hive-gold text-white font-semibold px-8 py-3 rounded-md transition-colors text-lg">
+              Register Now
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact -->
+      <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+            Get in <span class="text-hive-amber">Touch</span>
+          </h2>
+          <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                <p class="mb-6">Ready to unlock the full potential of your data? Reach out to us!</p>
+                <div class="space-y-4">
+                  <div class="flex items-start gap-3">
+                    <span class="font-semibold">Email:</span>
+                    <a href="mailto:info@hivebusiness.com" class="text-hive-amber hover:underline">info@hivebusiness.com</a>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="font-semibold">Phone:</span>
+                    <a href="tel:+1234567890" class="hover:underline">+1 (234) 567-890</a>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="font-semibold">Address:</span>
+                    <p>123 Data Drive, Analytics City, 45678</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Send Us a Message</h3>
+                <form>
+                  <div class="space-y-4">
+                    <div>
+                      <label class="block text-sm font-medium mb-1">Name</label>
+                      <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md" placeholder="Your Name">
+                    </div>
+                    <div>
+                      <label class="block text-sm font-medium mb-1">Email</label>
+                      <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-md" placeholder="Your Email">
+                    </div>
+                    <div>
+                      <label class="block text-sm font-medium mb-1">Message</label>
+                      <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="button" class="bg-hive-amber hover:bg-hive-gold text-white font-semibold px-6 py-2 rounded-md transition-colors">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <footer class="bg-hive-blue text-white py-12">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 class="font-semibold text-lg mb-4">About Hive</h3>
+              <p class="text-white/80 mb-4">Hive Business Analytics helps organizations unlock the power of their data with AI-driven insights.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-4">Services</h3>
+              <ul class="space-y-2 text-white/80">
+                <li><a href="#" class="hover:text-hive-amber transition-colors">Data Analytics</a></li>
+                <li><a href="#" class="hover:text-hive-amber transition-colors">Business Intelligence</a></li>
+                <li><a href="#" class="hover:text-hive-amber transition-colors">Data Warehousing</a></li>
+                <li><a href="#" class="hover:text-hive-amber transition-colors">Technical Training</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-4">Contact</h3>
+              <ul class="space-y-2 text-white/80">
+                <li>123 Data Drive, Analytics City</li>
+                <li>Phone: +1 (234) 567-890</li>
+                <li>Email: info@hivebusiness.com</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-4">Follow Us</h3>
+              <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-hive-amber transition-colors">
+                  <span>FB</span>
+                </a>
+                <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-hive-amber transition-colors">
+                  <span>TW</span>
+                </a>
+                <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-hive-amber transition-colors">
+                  <span>LI</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
+            <p>© 2025 Hive Business Analytics. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script>
+      // If viewed directly in a browser without server, show static content
+      if (window.location.protocol === 'file:') {
+        document.getElementById('root').style.display = 'none';
+        document.getElementById('static-content').style.display = 'block';
+      } else {
+        document.getElementById('static-content').style.display = 'none';
       }
     </script>
     

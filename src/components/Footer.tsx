@@ -1,4 +1,3 @@
-
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -64,6 +63,18 @@ const Footer = () => {
                 <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
                   <ChevronRight className="h-4 w-4 mr-1" />
                   Predictive Analytics
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-1" />
+                  Data Warehousing
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-hive-amber transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-1" />
+                  Technical Training and Upskills
                 </a>
               </li>
             </ul>

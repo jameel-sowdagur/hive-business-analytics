@@ -7,7 +7,6 @@ import About from "../components/About";
 import UpcomingEvent from "../components/UpcomingEvent";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Testimonials from "../components/Testimonials";
 
 const Index = () => {
   return (
@@ -18,7 +17,6 @@ const Index = () => {
         <Hero />
         <Services />
         <About />
-        <Testimonials />
         <UpcomingEvent />
         <Contact />
       </main>
@@ -28,3 +26,4 @@ const Index = () => {
 };
 
 export default Index;
+

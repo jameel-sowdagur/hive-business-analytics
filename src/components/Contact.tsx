@@ -1,10 +1,9 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin, Send, Smartphone } from "lucide-react";
+import { Phone, Mail, MapPin, Send, Smartphone, UserCircle } from "lucide-react";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -120,9 +119,12 @@ const Contact = () => {
           <div className="bg-hive-blue text-white rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
             <div className="space-y-6">
-              <div className="mb-6">
-                <h4 className="font-semibold text-hive-amber">Contact Person:</h4>
-                <p className="text-white/80">Tawheeda Rozbully (Mrs)</p>
+              <div className="mb-6 flex items-center">
+                <UserCircle className="h-6 w-6 mr-3 text-hive-amber" />
+                <div>
+                  <h4 className="font-semibold text-hive-amber">Contact Person:</h4>
+                  <p className="text-white/80">Tawheeda Rozbully (Mrs)</p>
+                </div>
               </div>
               <div className="flex items-start">
                 <div className="flex items-center mr-4">

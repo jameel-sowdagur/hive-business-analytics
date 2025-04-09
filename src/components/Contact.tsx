@@ -127,10 +127,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="flex items-center mr-4">
-                  <Phone className="h-5 w-5 mr-2 text-hive-amber" />
-                  <Smartphone className="h-5 w-5 text-hive-amber" />
-                </div>
+                <Phone className="h-5 w-5 mr-4 text-hive-amber" />
                 <div>
                   <h4 className="font-semibold">Phone / WhatsApp</h4>
                   <p className="text-white/80">+230 5786-9461</p>
